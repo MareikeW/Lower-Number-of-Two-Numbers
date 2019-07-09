@@ -1,7 +1,6 @@
-//Here you can enter 2 numbers and the program displays the lower number at the end.
-package Minimum;
-
 import java.util.Scanner;
+
+/*Here you can enter 2 numbers and the program displays the lower number at the end.*/
 
 public class Minimum {
         public static void main(String[] args) {
@@ -12,10 +11,7 @@ public class Minimum {
             System.out.print("Enter a second number. ");
             int number2 = num2.nextInt();
 
-//comparing the two numbers, which one is lower
-            if (number1 < number2)
-                System.out.println("The minimum of both numbers is: " + number1);//number1 is the minimum
-            else 
-                System.out.print("The minimum of both numbers is: " + number2); //number2 is the minimum
+//comparing the two entered numbers, which one is lower
+            System.out.println(Math.min(number1, number2));
         }
 }
